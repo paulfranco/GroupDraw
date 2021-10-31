@@ -6,8 +6,16 @@
 //
 
 import UIKit
+import PencilKit
 
 class ViewController: UIViewController {
+    
+    private lazy var canvasView: PKCanvasView = {
+        let canvasView = PKCanvasView()
+        canvasView.drawingPolicy = .anyInput
+        canvasView.translatesAutoresizingMaskIntoConstraints = false
+        return canvasView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
