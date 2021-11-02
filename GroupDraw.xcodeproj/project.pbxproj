@@ -13,6 +13,8 @@
 		03BF9EE1272E864F00F7C712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BF9EDF272E864F00F7C712 /* Main.storyboard */; };
 		03BF9EE3272E865100F7C712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03BF9EE2272E865100F7C712 /* Assets.xcassets */; };
 		03BF9EE6272E865100F7C712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BF9EE4272E865100F7C712 /* LaunchScreen.storyboard */; };
+		03E7114A272EBCBD00E05BF2 /* GroupDrawActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E71149272EBCBD00E05BF2 /* GroupDrawActivity.swift */; };
+		03E7114C272FDDF400E05BF2 /* GroupDrawingMessageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7114B272FDDF400E05BF2 /* GroupDrawingMessageType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		03BF9EE2272E865100F7C712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03BF9EE5272E865100F7C712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03BF9EE7272E865100F7C712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E71148272EBBE800E05BF2 /* GroupDraw.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GroupDraw.entitlements; sourceTree = "<group>"; };
+		03E71149272EBCBD00E05BF2 /* GroupDrawActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDrawActivity.swift; sourceTree = "<group>"; };
+		03E7114B272FDDF400E05BF2 /* GroupDrawingMessageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDrawingMessageType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +61,16 @@
 		03BF9ED8272E864F00F7C712 /* GroupDraw */ = {
 			isa = PBXGroup;
 			children = (
+				03E71148272EBBE800E05BF2 /* GroupDraw.entitlements */,
 				03BF9ED9272E864F00F7C712 /* AppDelegate.swift */,
 				03BF9EDB272E864F00F7C712 /* SceneDelegate.swift */,
 				03BF9EDD272E864F00F7C712 /* ViewController.swift */,
+				03E71149272EBCBD00E05BF2 /* GroupDrawActivity.swift */,
 				03BF9EDF272E864F00F7C712 /* Main.storyboard */,
 				03BF9EE2272E865100F7C712 /* Assets.xcassets */,
 				03BF9EE4272E865100F7C712 /* LaunchScreen.storyboard */,
 				03BF9EE7272E865100F7C712 /* Info.plist */,
+				03E7114B272FDDF400E05BF2 /* GroupDrawingMessageType.swift */,
 			);
 			path = GroupDraw;
 			sourceTree = "<group>";
@@ -140,6 +148,8 @@
 			files = (
 				03BF9EDE272E864F00F7C712 /* ViewController.swift in Sources */,
 				03BF9EDA272E864F00F7C712 /* AppDelegate.swift in Sources */,
+				03E7114C272FDDF400E05BF2 /* GroupDrawingMessageType.swift in Sources */,
+				03E7114A272EBCBD00E05BF2 /* GroupDrawActivity.swift in Sources */,
 				03BF9EDC272E864F00F7C712 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +297,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GroupDraw/GroupDraw.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9SJ54753D9;
@@ -304,6 +316,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.paulfran.GroupDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,6 +328,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GroupDraw/GroupDraw.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9SJ54753D9;
@@ -332,6 +347,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.paulfran.GroupDraw;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
